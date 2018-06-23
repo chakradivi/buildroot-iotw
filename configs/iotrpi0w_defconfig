@@ -28,7 +28,7 @@ BR2_TARGET_ROOTFS_EXT2_4=y
 BR2_ROOTFS_POST_BUILD_SCRIPT="board/raspberrypi0w/post-iotw-build.sh"
 BR2_ROOTFS_POST_IMAGE_SCRIPT="board/raspberrypi0w/post-image.sh"
 BR2_ROOTFS_POST_SCRIPT_ARGS="--add-pi3-miniuart-bt-overlay"
-
+BR2_ROOTFS_OVERLAY="board/raspberrypi/iotw-overlay/"
 
 #iot wireless packages
 BR2_PACKAGE_LIBXML2=y
