@@ -2057,4 +2057,8 @@ menu "Text editors and viewers"
 	source "package/vim/Config.in"
 endmenu
 
+menu "Iot Wireless Application"
+    source "package/iotwapp/Config.in"
+endmenu
+
 endmenu

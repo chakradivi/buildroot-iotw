@@ -1,0 +1,2 @@
+config BR2_PACKAGE_IOTWAPP
+    bool "iotwapp"
