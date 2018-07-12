@@ -11,9 +11,10 @@ define IOTWAPP_BUILD_CMDS
 endef
 
 define IOTWAPP_INSTALL_TARGET_CMDS
-	$(INSTALL) -D -m 0755 $(@D)/iotwapp $(TARGET_DIR)/usr/bin/
-	$(INSTALL) -D -m 0755 $(@D)/iotwapp_console $(TARGET_DIR)/usr/bin/
-	$(INSTALL) -D -m 0755 $(@D)/iotwapp_testing $(TARGET_DIR)/usr/bin/
+    $(INSTALL) -D -m 0755 $(@D)/iotwapp $(TARGET_DIR)/usr/bin/
+    $(INSTALL) -D -m 0755 $(@D)/iotwapp_console $(TARGET_DIR)/usr/bin/
+    $(INSTALL) -D -m 0755 $(@D)/iotwapp_testing $(TARGET_DIR)/usr/bin/
+    rsync -avz $(@D)/etc $(TARGET_DIR)/
 endef
 
 $(eval $(generic-package))
